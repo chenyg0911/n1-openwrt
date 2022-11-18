@@ -1,4 +1,7 @@
+# Repo Clone from https://github.com/huangqian8/Cloud-N1-OpenWrt
+ 
 # 云编译 N1 OpenWrt 固件
+
 
 **更新日志**
 - 20221031 更新内核版本 6.0.6
