@@ -90,8 +90,9 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        chmod +x $CONFIG_SH
-        ./$CONFIG_SH
+        # chmod +x $CONFIG_SH
+        # ./$CONFIG_SH
+        cp config.n1 openwrt/.config
 
     - name: Download package
       run: |
