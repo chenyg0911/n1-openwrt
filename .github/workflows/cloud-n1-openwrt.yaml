@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      # - 'README.md'
+      - 'README.md'
       # - 'script.sh'
       - 'config.n1'
   # schedule:
