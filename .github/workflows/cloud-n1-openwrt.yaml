@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'README.md'
-      - 'script.sh'
+      # - 'README.md'
+      # - 'script.sh'
       - 'config.n1'
   # schedule:
     # - cron: 0 8 * * 0
