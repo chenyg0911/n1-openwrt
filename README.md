@@ -2,7 +2,7 @@
 # 云编译 N1 OpenWrt 固件
 
 **对upstream的更改**
-- 废弃xonfig.sh生成.config,通过自行上传config.n1，方便本地通过make menuconfig进行定制.
+- 废弃config.sh生成.config,通过自行上传config.n1，方便本地通过make menuconfig进行定制.
 - feeds源增加了kenzo和small。
 - 相应的更改了action的定义。
 **说明**：
