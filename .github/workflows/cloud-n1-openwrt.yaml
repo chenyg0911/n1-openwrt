@@ -94,6 +94,12 @@ jobs:
         # ./$CONFIG_SH
         cp config.n1 openwrt/.config
 
+    - name: Replace golang with ver 1.22
+      run: |
+        cd openwrt
+        rm -rf feeds/packages/lang/golang
+        git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+
     - name: Download package
       run: |
         cd openwrt

@@ -5,6 +5,8 @@ try
 - 废弃config.sh生成.config,通过自行上传config.n1，方便本地通过make menuconfig进行定制.
 - feeds源增加了kenzo和small。
 - 相应的更改了action的定义。
+- 添加passwall2
+
 **说明**：
 - 本项目使用 Github Actions 下载 [Lean](https://github.com/coolsnowwolf/lede) 的 `Openwrt` 源码仓库，进行云编译。
 - 本项目使用定时编译（北京时间每周日下午4点开始自动运行编译）及触发编译（更新 `README.md`、 `script.sh`、 `config.sh`后可开始编译）两种方式。
