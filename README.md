@@ -1,4 +1,3 @@
-try
 # 云编译 N1 OpenWrt 固件
 
 **对upstream的更改**
@@ -6,6 +5,7 @@ try
 - feeds源增加了kenzo和small。
 - 相应的更改了action的定义。
 - 添加passwall2
+- kernel version change to v6.6
 
 **说明**：
 - 本项目使用 Github Actions 下载 [Lean](https://github.com/coolsnowwolf/lede) 的 `Openwrt` 源码仓库，进行云编译。
