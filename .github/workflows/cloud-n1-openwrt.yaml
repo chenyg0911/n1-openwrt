@@ -78,6 +78,11 @@ jobs:
         # ./$SCRIPT_SH
         cd openwrt
         # sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
+
+        sed -i 's/#src-git luci https:\/\/github.com\/coolsnowwolf\/luci/src-git luci https:\/\/github.com\/coolsnowwolf\/luci/g' ./feeds.conf.default
+        sed -i 's/src-git luci https:\/\/github.com\/coolsnowwolf\/luci.git;openwrt-23.05/#src-git luci https:\/\/github.com\/coolsnowwolf\/luci.git;openwrt-23.05/g' ./feeds.conf.default
+
+        
         sed -i -e '$asrc-git kenzo https://github.com/kenzok8/openwrt-packages\nsrc-git small https://github.com/kenzok8/small' ./feeds.conf.default
         # echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> feeds.conf.default && echo "src-git small https://github.com/kenzok8/small" >> feeds.conf.default
 
