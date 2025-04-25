@@ -18,12 +18,12 @@ env:
   CONFIG_SH: config.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
-  KERNEL_VERSION: 6.6.34
+  KERNEL_VERSION: 6.6.67
 
 jobs:
   build_openwrt:
     name: Build OpenWrt and release
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
 
