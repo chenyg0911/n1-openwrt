@@ -20,6 +20,25 @@ env:
   TZ: Asia/Shanghai
   KERNEL_VERSION: 6.6.67
 
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v3
+
+#     - name: Set up Go 1.23.6
+#       uses: actions/setup-go@v4
+#       with:
+#         go-version: '1.23.6'
+
+#     - name: Build OpenWrt
+#       run: |
+#         make clean
+#         make defconfig
+#         make -j$(nproc)
+
 jobs:
   build_openwrt:
     name: Build OpenWrt and release
@@ -103,7 +122,7 @@ jobs:
       run: |
         cd openwrt
         rm -rf feeds/packages/lang/golang
-        git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+        git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 
     - name: Download package
       run: |
